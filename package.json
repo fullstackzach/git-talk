@@ -4,11 +4,12 @@
   "description": "A talk about git",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "mdx-deck deck.mdx"
   },
   "author": "Zach Willard",
   "license": "ISC",
   "devDependencies": {
+    "gatsby-source-filesystem": "^2.1.48",
     "mdx-deck": "^4.1.0"
   }
 }
