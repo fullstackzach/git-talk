@@ -3,6 +3,7 @@ import { Box } from 'theme-ui'
 import addCommit from './images/addcommit.png'
 import comic from './images/comic.png'
 import graph from './images/graph.jpeg'
+import comparison from './images/svn-vs-git.jpeg'
 
 export const theme = themes.book
 
@@ -12,14 +13,16 @@ export const theme = themes.book
 
 # What is Git? 
 
-- A distrbited version control system
-  - every developer has a complete copy of the code
+- A distributed version control system
+  - Created by the creator of Linux
+  - after some drama happened over their current version control BitKeeper
+  - pretty much the version control with some exceptions
 
 ---
 
-# It can be reeeealy frusterating to learn for newcomers
+It's distributed - Compare this to a centralized source control system like SVN
 
-<img src={comic} style={{maxHeight: '70vh'}} />
+<img src={comparison} style={{ maxHeight: '70vh' }}/>
 
 ---
 
@@ -27,13 +30,30 @@ export const theme = themes.book
 
 ### (and aruguably papers, and presentations too)
 
----
-
-# Go back and forth in your code - you can review the history of your project
+It's useful no matter what language you are programming in - Javascript, Java, Python, Go.. whatever
 
 ---
 
-# Bravely experiment with changes; You can always go back
+# In college I used to zip up individual working versions of my projects.. yuck
+
+
+* "project_v1.zip"
+* "project_v2.zip"
+* "project_v3.zip"
+* etc.
+
+---
+
+# But, It can be reeeealy frusterating to learn for newcomers
+
+<img src={comic} style={{maxHeight: '70vh'}} />
+
+---
+
+# Go back in time
+ 
+* You can review the history of your project!
+* Determine when a bug might have been added and test when did that feature last work?
 
 ---
 
@@ -47,17 +67,7 @@ export const theme = themes.book
 
 ---
 
-- **Origin**: The central repo the project is stored at (e.g. at GitHub)
-- **Cloning**: Make a copy of the code from ***Origin*** to your machine
-
----
-
-Let's go pull down a repo from GitHub and look at it
-
-
-
-
----
+# git add and commit workflow
 
 <Box
 style={{
@@ -65,22 +75,36 @@ style={{
 }}
 >
 <img src={addCommit} style={{
-  maxHeight: "100%", 
-  maxWidth: "100%" 
+  maxHeight: "100%",
+  maxWidth: "100%"
 }}/>
 </Box>
 
 ---
 
-# Demo
+# Bravely experiment with changes without messing up your project
+
+- You can always go back
+- Stash changes for later
+
+---
+
+- **Origin**: The central repo the project is stored at (e.g. at GitHub)
+- **Cloning**: Make a copy of the code from ***Origin*** to your machine
+
+---
+
+Let's go pull down a repo from GitHub and look at it
 
 ---
 
 # GitHub
 
-The most popular destination for open source today. 
+The most popular git platform for open source today. 
 
 You should start posting your school projects and any side-projects here to build a profile. Employers do look at them!
+
+Here's mine: https://github.com/fullstackzach
 
 Getting involved in open source is fun too.
   - Work with people around the world
