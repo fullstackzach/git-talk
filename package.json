@@ -1,0 +1,14 @@
+{
+  "name": "git-talk",
+  "version": "1.0.0",
+  "description": "A talk about git",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zach Willard",
+  "license": "ISC",
+  "devDependencies": {
+    "mdx-deck": "^4.1.0"
+  }
+}
