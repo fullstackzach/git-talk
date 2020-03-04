@@ -1,4 +1,8 @@
 import { themes } from 'mdx-deck'
+import { Box } from 'theme-ui'
+import addCommit from './images/addcommit.png'
+import comic from './images/comic.png'
+import graph from './images/graph.jpeg'
 
 export const theme = themes.book
 
@@ -8,10 +12,14 @@ export const theme = themes.book
 
 # What is Git? 
 
-
 - A distrbited version control system
   - every developer has a complete copy of the code
-- It can be reeeealy frusterating to learn for newcomers
+
+---
+
+# It can be reeeealy frusterating to learn for newcomers
+
+<img src={comic} style={{maxHeight: '70vh'}} />
 
 ---
 
@@ -19,20 +27,48 @@ export const theme = themes.book
 
 ### (and aruguably papers, and presentations too)
 
-- Time travel your code
-- Bravely experiment with changes; You can always go back
-- Enable collaboration with others
+---
+
+# Go back and forth in your code - you can review the history of your project
+
+---
+
+# Bravely experiment with changes; You can always go back
 
 ---
 
 # Some vocab
 
-- **Commit**: an incremental version of your code
+- **Commit**: an incremental versions of your code (the dots below)
 - **Branch**: A collection of commits that diverge from master (or another branch)
 - **Master**: The main branch of your project
 
-- **Origin**: The central repo the project is stored at
+<img src={graph} style={{ height: '50vh' }} />
+
+---
+
+- **Origin**: The central repo the project is stored at (e.g. at GitHub)
 - **Cloning**: Make a copy of the code from ***Origin*** to your machine
+
+---
+
+Let's go pull down a repo from GitHub and look at it
+
+
+
+
+---
+
+<Box
+style={{
+      height: '70vh',
+}}
+>
+<img src={addCommit} style={{
+  maxHeight: "100%", 
+  maxWidth: "100%" 
+}}/>
+</Box>
 
 ---
 
@@ -42,9 +78,28 @@ export const theme = themes.book
 
 # GitHub
 
-The destination for open source today
+The most popular destination for open source today. 
 
-You should create a profile and get a portfolio going
+You should start posting your school projects and any side-projects here to build a profile. Employers do look at them!
+
+Getting involved in open source is fun too.
+  - Work with people around the world
+  - Learn new things
+
+---
+
+Lets push our git-demo project to GitHub
+
+1. [Create a repo](https://github.com/new) at GitHub
+2. Set the repo as the origin
+
+`git remote add origin {url from GitHub}`
+
+3. push it up to github! [^1]
+
+`git push -u origin master`
+
+[^1] You may need to create a personal access token for the first time
 
 ---
 
@@ -53,3 +108,5 @@ You should create a profile and get a portfolio going
 Keep learning!
 
 https://learngitbranching.js.org/
+
+https://ohshitgit.com
