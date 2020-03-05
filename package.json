@@ -2,14 +2,20 @@
   "name": "git-talk",
   "version": "1.0.0",
   "description": "A talk about git",
-  "main": "index.js",
+  "homepage": "https://fullstackzach.github.io/git-talk",
   "scripts": {
-    "start": "mdx-deck deck.mdx"
+    "start": "mdx-deck ./slides/deck.mdx",
+    "clean": "rm -rf .cache build public",
+    "build": "npm run clean && gatsby build --prefix-paths && mv public build",
+    "deploy": "npx gh-pages --dist ./build --branch gh-pages"
   },
   "author": "Zach Willard",
   "license": "ISC",
   "devDependencies": {
-    "gatsby-source-filesystem": "^2.1.48",
-    "mdx-deck": "^4.1.0"
+    "@babel/core": "^7.0.0",
+    "mdx-deck": "^4.1.0",
+    "gatsby": "^2.17.15",
+    "gatsby-plugin-compile-es6-packages": "^2.1.0",
+    "gatsby-theme-mdx-deck": "4.1.0"
   }
 }
